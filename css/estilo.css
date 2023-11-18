@@ -1,0 +1,201 @@
+		*{
+			margin: 0;
+			border: 0;
+			padding: 0;
+		}
+
+		html{
+			font-family: arial;
+			font-size: 62.5%;
+			scroll-behavior: smooth; /*Serve pra rolar a página do site como se fosse o scroll do mouse*/
+		}
+
+		header{
+			background: linear-gradient(to top, #fff, #ff0000); /*EFEITO DEGRADE*/
+			color: #fff;
+			font-size: 1.8rem;
+			padding: 1rem;
+			padding-top: 2rem;
+			position: fixed; /*para deixar o header sempre aparecendo enquanto roda a tela */
+			width: 100%;
+		}
+
+		footer{
+			background: linear-gradient(to bottom, #fff, #ff0000);
+			color: #000000;
+			font-size: 1.8rem;
+			padding: 1rem;
+			text-align: center;
+		}
+
+		.conteudo{
+			font-size: 1.6rem;
+			background-color: #fff;
+			padding: 1.5rem;
+			text-align: justify;
+			margin: 0 auto;
+			max-width: 95%; /* largura maxima */
+		}
+
+		.conteudo-topo{
+			font-size: 1.6rem;
+			background-color: #fff;
+			padding: 1.5rem;
+			text-align: justify;
+			margin: 0 auto;
+			max-width: 95%;
+			padding-top: 31rem;
+		}
+
+		h1{
+			font-size: 2rem;
+			text-align: center;
+			text-shadow: 1px 1px 1px #000000;
+			color: rgb(255, 0, 0);
+		}
+
+		h2{
+			font-size: 2rem;
+		}
+
+		h3{
+			font-size: 1.7rem;
+		}
+
+		h4{
+			font-size: 1.6rem;
+		}
+		h5{
+			font-size: 3rem;
+			color: rgb(255, 0, 0);
+			text-shadow: 1px 1px 1px #000000;
+			text-align: center;
+		}
+
+		figure{
+			text-align: center;
+		}
+
+		.imagens-site{
+			border-radius: 10px 10px 10px 10px; /* para arredondar a imagem */
+			width: 70%;/*largura da imagem*/
+			height: 50%;/*altura da imagem*/
+			border: solid;
+		}
+		
+		@media(min-width: 280px) and (max-width: 820px){/*@media = feito para ajustar as coisas no celular*/
+
+			.imagens-site{
+			border-radius: 20px 20px 50px 20px; /* para arredondar a imagem */
+			width: 90%;/*largura da imagem*/
+			height: 70%;/*altura da imagem*/
+		}
+
+		}
+
+		#compras{
+			background-color: rgba(255, 215, 0, 0.5);/*rgba = alpha serve para deixar mais transparente*/
+			width: 300px;
+			height: 150px;
+			right: 0;
+			position: fixed;
+			text-align: center;
+			margin-top: 20rem;
+			z-index: 1;/*serve para deixar por sequencia de prioridade as coisas conforme for colocado os numeros*/
+			border-radius: 20px;
+			padding-top: 30px;
+			border: solid rgb(0, 255, 0);
+		}
+		@media(min-width: 280px) and (max-width: 820px){
+			
+			#compras{
+				background-color: rgba(255, 215, 0, 0.5);/*rgba = alpha serve para deixar mais transparente*/
+				width: 160px;
+				height: 100px;
+				right: 0;
+				position: fixed;
+				text-align: center;
+				margin-top: 25rem;
+				z-index: 1;/*serve para deixar por sequencia de prioridade as coisas conforme for colocado os numeros*/
+				border-radius: 20px;
+				padding-top: 5px;
+				border: solid rgb(0, 255, 0);
+			}
+		}
+
+		#grid-conteudo{
+			background-color: #ffffff;
+			padding-top: 20rem;
+		}
+
+		.grid{
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+			grid-gap: 1px;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.grid div{
+			background-color: #ffffff;
+			text-align: center;
+			padding: 1rem;
+		}
+		#formulario{
+			background-color: #dcdcdc;
+		}
+		input{
+			border: #ffffff;
+			padding: 5px;
+			border-radius: 10px;
+			font-size: 1.7rem;
+		}
+		#mensagem{
+			border: solid;
+			padding: 5px;
+			border-radius: 10px;
+			font-size: 1.8rem;
+		}
+		#btn-limpar{
+			background-color: #FF0000;
+			color: #FFFAFA;
+			text-align: center;
+			padding: 5px;
+			font-weight: bold;
+		}
+		#btn-enviar{
+			background-color: #008000;
+			color: #FFFAFA;
+			text-align: center;
+			padding: 5px;
+			font-weight: bold;
+		}
+
+		#btn-compras{
+			text-align: center;
+		}
+
+		nav{
+			text-align: right;
+			font-size: 1.6rem;
+			word-spacing: 30px;
+			margin-right: 3%;
+			padding-bottom: 5px;
+		}
+		a{
+			text-decoration: none;
+			color: #ffff00;
+			font-weight: bold;
+			text-shadow: 2px 2px 3px #000000;/*sombra das escritas*/
+			background-color: rgb(255, 0, 0); 
+			padding: 3px;
+			border-radius: 10px;
+		}
+		a:hover{/*altera a cor quando a seta está em cima do link*/
+			color: #ffffff;
+			text-shadow: 2px 2px 3px #000000;
+			background-color: rgb(255, 0, 0); 
+			padding: 3px;
+			border-radius: 10px;
+			border: solid #ffff00;
+		}
